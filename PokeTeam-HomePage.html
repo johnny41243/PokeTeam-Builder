@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokéTeam Builder</title>
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>PokéTeam</h1>
+
+    <nav>
+      <a href="#    ">Home</a>
+      <a href="#">Builder</a>
+      <a href="#">How It Works</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="hero-text" id="hero-text">
+      <p class="tagline">Competitive Pokémon Team Generator</p>
+
+      <h2>Choose one Pokémon.<br>Build the perfect team around it.</h2>
+
+      <p class="description">
+        Pick your favourite Pokémon and generate a balanced team based on type coverage,
+        weaknesses, roles and battle synergy.
+      </p>
+
+      <div class="search-box">
+        <input id="pokemon-search" type="text"  />
+        <button id="generate-team">Generate Team</button>
+      </div>
+      <div id="output"></div>
+    </section>
+
+    <section class="team-card">
+      <h3>Your Generated Team</h3>
+
+      <div id="team-grid" class="team-grid"></div>
+  <div id="team-analysis" class="team-analysis hidden"></div>
+  <div id="team-strengths" class="team-strengths hidden"></div>
+     </section>
+     
+  </main>
+
+<div id ="pokemon-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button" id="close-modal">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="PokeTeam-HomePage.css" />
+<script src="PokeTeam.js"></script>
+</body>
+</html>
